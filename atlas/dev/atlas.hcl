@@ -14,6 +14,11 @@ env "dev" {
   // See: https://atlasgo.io/concepts/dev-database
   dev = "docker://postgres/15/testdb"
 
+  // NOTE: set it to avoid managing the schema of the table `atlas_schema_revisions` in the schema `atlas_schema_revisions`
+  schemas = [
+    "public",
+  ]
+
   migration {
     dir = "file://dmls/"
   }
