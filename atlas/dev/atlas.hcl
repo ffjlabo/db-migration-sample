@@ -13,4 +13,8 @@ env "dev" {
   // Define the URL of the Dev Database for this environment
   // See: https://atlasgo.io/concepts/dev-database
   dev = "docker://postgres/15/testdb"
+
+  migration {
+    dir = "file://dmls/"
+  }
 }
