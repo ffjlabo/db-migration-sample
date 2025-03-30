@@ -2,7 +2,8 @@
 env "dev" {
   // Declare where the schema definition resides.
   src = [
-    "file://ddls/users.sql"
+    "file://ddls/users.sql",
+    "file://ddls/blog_posts.sql",
   ]
 
   // Define the URL of the database which is managed
